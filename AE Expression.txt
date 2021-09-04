@@ -1,0 +1,2 @@
+ValueAtTime()
+thisComp.layer(index-1).transform.scale.valueAtTime(time-1)
