@@ -1,7 +1,24 @@
-ValueAtTime()
+//ValueAtTime()
 thisComp.layer(index-1).transform.scale.valueAtTime(time-1)
 
 //ScaleRoundCorner
 scaleX = content("Rectangle 1").content("Rectangle Path 1").size[0]/2*-1;
 scaleY = content("Rectangle 1").content("Rectangle Path 1").size[1]/2*-1;
 [scaleX,scaleY]
+
+//AutoFadeInFadeOut
+fade = 1; // fade duration in seconds
+fadeIn = (time - inPoint) / fade;
+fadeOut = (outPoint - time) / fade;
+if (time < inPoint + fade) {
+    ease(fadeIn, 0, 1) * value;
+} else if (time > outPoint - fade) {
+    ease(fadeOut, 0, 1) * value;
+} else {
+    value;
+}
+
+ //AudioKeyframe
+  ease(thisComp.layer("Audio Amplitude").effect("Both Channels")("Slider"),5,40,134,200);
+  or
+  linear(thisComp.layer("Audio Amplitude").effect("Both Channels")("Slider"),5,40,134,200);
