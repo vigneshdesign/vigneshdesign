@@ -22,3 +22,9 @@ if (time < inPoint + fade) {
   ease(thisComp.layer("Audio Amplitude").effect("Both Channels")("Slider"),5,40,134,200);
   or
   linear(thisComp.layer("Audio Amplitude").effect("Both Channels")("Slider"),5,40,134,200);
+
+//Blink
+blinkRate=10;
+n=Math.sin(time*blinkRate);
+if(n<0) 0;
+else 100;
