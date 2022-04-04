@@ -1,12 +1,12 @@
-//ValueAtTime()
+//ValueAtTime - Vignesh.psd
 thisComp.layer(index-1).transform.scale.valueAtTime(time-1)
 
-//ScaleRoundCorner
+//ScaleRoundCorner - Vignesh.psd
 scaleX = content("Rectangle 1").content("Rectangle Path 1").size[0]/2*-1;
 scaleY = content("Rectangle 1").content("Rectangle Path 1").size[1]/2*-1;
 [scaleX,scaleY]
 
-//AutoFadeInFadeOut
+//AutoFadeInFadeOut - Vignesh.psd
 fade = 1; // fade duration in seconds
 fadeIn = (time - inPoint) / fade;
 fadeOut = (outPoint - time) / fade;
@@ -18,13 +18,26 @@ if (time < inPoint + fade) {
     value;
 }
 
- //AudioKeyframe
+ //AudioKeyframe - Vignesh.psd
   ease(thisComp.layer("Audio Amplitude").effect("Both Channels")("Slider"),5,40,134,200);
   or
   linear(thisComp.layer("Audio Amplitude").effect("Both Channels")("Slider"),5,40,134,200);
 
-//Blink
+//Blink - Vignesh.psd
 blinkRate=10;
 n=Math.sin(time*blinkRate);
 if(n<0) 0;
 else 100;
+
+//Expression for Single Keyframe with Slider - Vignesh.psd
+prop = thisProperty;
+firstValue = prop.key(1).value;
+lastValue = prop.key(2).value;
+
+newValue = 500;//this value is to be changed for a controller or whatever
+
+linear(value, firstValue, lastValue, firstValue, newValue);
+        
+//Checkbox Control - Vignesh.psd
+thisComp.layer("Adjustment Layer 1").effect("Checkbox Control")("Checkbox") == 1 ? 100 : 0;
+       
