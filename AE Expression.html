@@ -41,3 +41,6 @@ linear(value, firstValue, lastValue, firstValue, newValue);
 //Checkbox Control - Vignesh.psd
 thisComp.layer("Adjustment Layer 1").effect("Checkbox Control")("Checkbox") == 1 ? 100 : 0;
        
+//Audio to Lip Sync
+x=thisComp.layer("Audio Amplitude").effect("Both Channels")("Slider"); //Connect Audio Layers both channels
+linear(x,0,25,0,1.5);
