@@ -1,0 +1,11 @@
+[
+    {
+      "id": 1,
+      "lines": [
+        "npm install @nextui-org/react",
+        "yarn add @nextui-org/react",
+        "pnpm add @nextui-org/react"
+      ]
+    }
+  ]
+  
