@@ -1,18 +1,22 @@
 [
     {
-      "id": 1,
-      "lines": [
-        "npm install @nextui-org/react",
-        "yarn add @nextui-org/react",
-        "pnpm add @nextui-org/react"
-      ]
+        "id": 1,
+        "snippet": "npm install @nextui-org/react"
     },
     {
-      "id": 2,
-      "lines": [
-        "#Wiggle",
-        "wiggle(0.5,10)"
-      ]
+        "id": 2,
+        "snippet": "yarn add @nextui-org/react"
+    },
+    {
+        "id": 3,
+        "snippet": "pnpm add @nextui-org/react"
+    },
+    {
+        "id": 4,
+        "snippet": "#Wiggle"
+    },
+    {
+        "id": 5,
+        "snippet": "wiggle(0.5,10)"
     }
-  ]
-  
+]
