@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "snippet": "npm install @nextui-org/react"
+        "snippet": "npm install @nextui-org/react\nline2 test"
     },
     {
         "id": 2,
