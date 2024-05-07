@@ -1,22 +1,15 @@
 [
     {
         "id": 1,
-        "snippet": "npm install @nextui-org/react\nline2 test"
+        "snippet": "let amp = 0.6; \n let freq = 30; \n wiggle(amp,freq)"
     },
     {
         "id": 2,
-        "snippet": "yarn add @nextui-org/react"
+        "snippet": "let amp = 0.6; \n let freq = 30; \n wiggle(amp,freq)"
     },
     {
         "id": 3,
-        "snippet": "pnpm add @nextui-org/react"
-    },
-    {
-        "id": 4,
-        "snippet": "#Wiggle"
-    },
-    {
-        "id": 5,
-        "snippet": "wiggle(0.5,10)"
+        "snippet": "let amp = 0.6; \n let freq = 30; \n wiggle(amp,freq)"
     }
 ]
+ 
